@@ -1,1 +1,1 @@
-# estadistica_espacial
+# Estadistica espacial
