@@ -1,7 +1,6 @@
 import geopandas as gpd
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.colors as colors
 from shapely.geometry import Point
 import rasterio
 
@@ -103,7 +102,7 @@ with rasterio.open("data/rasters/percent_forest_2010_reprojected.tif", mode='r')
     samples_f2010 = raster.sample(zip(xs, ys))
     calibrados['Forest_P_2010'] = [elem[0] for elem in samples_f2010]
 
-# Load raster into variable and extract coordinates
+# Cargar raster a variable y extraer limites
 mask = rasterio.open("data/rasters/mascara_area_estudio_reprojected.tif")
 min_x, min_y, max_x, max_y = mask.bounds
 
