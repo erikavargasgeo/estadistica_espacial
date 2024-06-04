@@ -1,0 +1,8 @@
+numpy
+matplotlib
+geopandas
+esda
+rasterio
+spreg
+pykrige
+scikit-learn
